@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Contact = (props) => {
   return (
-    <section className="Contact">
+    <section className="Contact" key={props.Id}>
       <img className="avatar" src={props.Avatar} alt={props.Name} />
       <div>
         <p className="name">{props.Name}</p>
